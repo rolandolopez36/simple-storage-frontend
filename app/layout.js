@@ -1,5 +1,13 @@
-const Layout = ({ children }) => {
-  return <div className="min-h-screen bg-gray-100">{children}</div>;
-};
+// app/layout.js
 
-export default Layout;
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <head>
+        <title>Simple Storage DApp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
+      <body>{children}</body>
+    </html>
+  );
+}
